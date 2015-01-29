@@ -21,9 +21,9 @@ buildDir = 'target'
 task build(type:Exec, dependsOn: ':core:install') {
     inputs.files fileTree(dir: '.', excludes: ['.classpath', '.properties', '.settings', 'target', 'target-eclipse'])
     outputs.dir 'target'
-    commandLine '"C:\Program Files (x86)\Jenkins\jobs\test-free-style\workspace\gradlew.bat"', '-non-interactive', '-plain-output', '--stacktrace', 'war'
+    commandLine '"C:\\Program Files (x86)\\Jenkins\\jobs\\test-free-style\\workspace\\gradlew.bat"', '-non-interactive', '-plain-output', '--stacktrace', 'war'
 }
 
 task clean(overwrite:true, type:Exec) {
-    commandLine '"C:\Program Files (x86)\Jenkins\jobs\test-free-style\workspace\gradlew.bat"', '-non-interactive', '-plain-output', 'clean'
+    commandLine '"C:\\Program Files (x86)\\Jenkins\\jobs\\test-free-style\\workspace\\gradlew.bat"', '-non-interactive', '-plain-output', 'clean'
 }

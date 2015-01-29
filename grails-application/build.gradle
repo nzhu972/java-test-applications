@@ -12,7 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *
 
 apply plugin: 'base'
 
@@ -27,3 +27,4 @@ task build(type:Exec, dependsOn: ':core:install') {
 task clean(overwrite:true, type:Exec) {
     commandLine '"C:\\Program Files (x86)\\Jenkins\\jobs\\test-free-style\\workspace\\gradlew.bat"', '-non-interactive', '-plain-output', 'clean'
 }
+*/
